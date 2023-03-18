@@ -73,6 +73,15 @@ export const ModalData = styled.div`
   justify-content: center;
   gap: 3rem;
 
+  .caption {
+    max-width: 270px;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    padding: 10px;
+    background: var(--bg-secondary-gray);
+    font-weight: bold;
+  }
+
   @media (max-width: 945px) {
     width: 100%;
     gap: 15px;
@@ -108,6 +117,10 @@ export const ModalCard = styled.div`
   @media (max-width: 945px) {
     .info {
       display: none;
+    }
+
+    .options {
+      text-align: center;
     }
   }
 `;

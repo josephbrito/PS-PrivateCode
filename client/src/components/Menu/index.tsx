@@ -77,7 +77,7 @@ const Menu: React.FC = () => {
               key={product.id}
               id={product.id}
               url={product.url}
-              caption={product.nome}
+              caption={product.descricao}
               name={product.nome}
               price={product.preco}
             />

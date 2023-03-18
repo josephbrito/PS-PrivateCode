@@ -40,7 +40,7 @@ const Card: React.FC<IProps> = ({ id, url, caption, name, price }: IProps) => {
         onClick={() => setIsOpen(true)}
       />
       <Caption onClick={() => setIsOpen(true)}>
-        <span>{caption}</span>
+        <span>{name}</span>
       </Caption>
       <Modal
         isOpen={isOpen}
@@ -74,6 +74,7 @@ const Card: React.FC<IProps> = ({ id, url, caption, name, price }: IProps) => {
                 <span className="price">R$ {price}</span>
               </div>
             </ModalCard>
+            <span className="caption">{caption}</span>
             <Total>
               <span>Total</span>
               <span className="total_money">R$ {price}</span>
